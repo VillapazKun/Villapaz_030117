@@ -17,7 +17,7 @@ app.get('/about', function(req, res){
 app.get('*', function(req, res){
   res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
 });
-app.get('Calculator', function(req, res){
+app.get('calculator', function(req, res){
   res.sendFile(path.join(__dirname, 'views/calculator.html'));
 });
 //express server listen
